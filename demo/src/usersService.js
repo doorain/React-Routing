@@ -25,9 +25,8 @@ export function getPeople() {
 
 export function getCharacter(id) {
   let person = people.filter(e => {
-    if(e.id === +id) {
-      return e
-    }
+    return e.id === +id
+    
   })
   return person[0]
 }
